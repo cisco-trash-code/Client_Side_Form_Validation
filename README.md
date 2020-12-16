@@ -1,4 +1,6 @@
-# Client-side Form Validation
+# Client-side Form Validation 📝
+
+# Intro
 
 Client side registration form validation using vanilla JavaScript.
 
