@@ -1,0 +1,20 @@
+{
+  "name": "client_side_form_validation",
+  "version": "1.0.0",
+  "description": "# Intro",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sovisrushain/client_side_form_validation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sovisrushain/client_side_form_validation/issues"
+  },
+  "homepage": "https://github.com/sovisrushain/client_side_form_validation#readme"
+}
