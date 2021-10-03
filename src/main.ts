@@ -6,7 +6,7 @@ const password2 = document.getElementById('password2');
 
 /** Show input erroe message **/
 
-function showError(input, message) {
+const showError = (input, message) => {
     const formControl = input.parentElement;
     formControl.className = 'form-control error';
     const small = formControl.querySelector('small');
@@ -15,14 +15,14 @@ function showError(input, message) {
 
 /** Show Success **/
 
-function showSuccess(input) {
+const showSuccess = (input) => {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
 }
 
 /** Check Email Validation */
 
-function checkEmail(input) {
+const checkEmail = (input) => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if(re.test(input.value.trim())){
         showSuccess(input)
@@ -33,7 +33,7 @@ function checkEmail(input) {
 
 /** Check Required fields **/
 
-function checkRequired(inputArray) {
+const checkRequired = (inputArray) => {
     inputArray.forEach(function(input){
         if(input.value.trim() === ''){
             showError(input, `${getFieldName(input)} is required`)
@@ -45,7 +45,7 @@ function checkRequired(inputArray) {
 
 /** Check Input Length **/
 
-function checkLength(input, min, max) {
+const checkLength = (input, min, max) => {
     if(input.value.length < min) {
         showError(input, `${getFieldName(input)} must be at least ${min} charactors`)
     } else if (input.value.length > max) {
@@ -57,7 +57,7 @@ function checkLength(input, min, max) {
 
 /** Check Password Match **/
 
-function checkPasswordsMatch(input_one, input_two) {
+const checkPasswordsMatch = (input_one, input_two) => {
     if(input_one.value !== input_two.value){
         showError(input_two, 'Passwords do not match ')
     }
@@ -65,7 +65,7 @@ function checkPasswordsMatch(input_one, input_two) {
 
 /** Get Fieild Name **/
 
-function getFieldName(input) {
+const getFieldName = (input) => {
     return input.id.charAt(0).toUpperCase() + input.id.slice(1)
 }
 
