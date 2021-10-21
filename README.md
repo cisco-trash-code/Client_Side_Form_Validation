@@ -1,29 +1,22 @@
-# Client-side Form Validation 📝
+# CLIENT SIDE FORM VALIDATION
 
-# Intro
 
-Client side registration form validation using vanilla JavaScript.
+## Usage
 
-## Rules For Successful Registration
+1. Clone the repository
 
-- All of fields should be filled.
-- **username** must be **3** charactors and less than **15** charactors.
-- **password** must be **6** charactors and less than **25** charactors.
-- **email** should be a vaild type email.
-- Both passwords should be equal.
+`git clone https://github.com/sovisrushain/Client_Side_Form_Validation.git`
 
-## Tech Stack
+2. Open it in IntelliJ IDEA OR a preferred IDE
 
-- HTML5
-- CSS3
-- JavaScript
+3. Install all the dependencies
 
-## Contributing
+`npm install`
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+4. Set all the file watchers
 
-Please make sure to update tests as appropriate.
+5. You are all set.
 
-## License
+## LICENSE
 
-[MIT](https://choosealicense.com/licenses/mit/)
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
